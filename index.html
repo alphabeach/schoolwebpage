@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLSU Science and Technology Complex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/themes.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-success fixed-top" data-bs-theme="dark">
+        <div class="container">
+            <div class="d-flex justify-content-center w-100">
+                <a class="navbar-brand mx-3" href="#">DLSU STC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About STC</a></li>
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission and Vision</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><h6 class="dropdown-header">Basic Education</h6></li>
+                                <li><a class="dropdown-item" href="elementary.html">Elementary</a></li>
+                                <li><a class="dropdown-item" href="highschool.html">High School</a></li>
+                                <li><a class="dropdown-item" href="seniorhigh.html">Senior High School</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">College</h6></li>
+                                <li><a class="dropdown-item" href="college-cas.html">College of Arts and Sciences</a></li>
+                                <li><a class="dropdown-item" href="college-ccs.html">College of Computer Studies</a></li>
+                                <li><a class="dropdown-item" href="college-coe.html">College of Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Campus Life
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="events.html">Events</a></li>
+                                <li><a class="dropdown-item" href="organizations.html">Organizations</a></li>
+                                <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admissions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="undergraduate.html">Undergraduate</a></li>
+                                <li><a class="dropdown-item" href="graduate.html">Graduate</a></li>
+                                <li><a class="dropdown-item" href="international.html">International</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="scholarships.html">Scholarships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Welcome to DLSU STC</h1>
+                    <p class="lead">Empowering Innovation Through Science and Technology</p>
+                    <a href="/about.html" class="btn btn-success btn-lg">Learn More</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/public/stc4.jpg" alt="DLSU STC Campus" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Components -->
+    <section class="academic-levels py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Academic Programs</h2>
+                </div>
+            </div>
+            <div class="tab-container">
+                <div class="tab-nav d-flex justify-content-center mb-4">
+                    <button class="tab active mx-2 btn btn-outline-success" data-target="#elementaryTab">Elementary</button>
+                    <button class="tab mx-2 btn btn-outline-success" data-target="#highSchoolTab">High School</button>
+                    <button class="tab mx-2 btn btn-outline-success" data-target="#seniorHighTab">Senior High School</button>
+                    <button class="tab mx-2 btn btn-outline-success" data-target="#collegeTab">College</button>
+                </div>
+            
+                <!-- Elementary Carousel -->
+                <div id="elementaryTab" class="tab-panel active">
+                    <div id="elementaryCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/public/stc5.jpg" class="d-block w-100" alt="Core Subjects">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Core Subjects</h5>
+                                    <p>English Language, Mathematics, Science, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/stc6.jpg" class="d-block w-100" alt="Special Programs">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Special Programs</h5>
+                                    <p>Science & Technology, Arts & Music, Sports Development.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/stc7.jpg" class="d-block w-100" alt="Facilities">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Facilities</h5>
+                                    <p>Science Labs, Computer Labs, Music Room, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#elementaryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#elementaryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- High School Carousel -->
+                <div id="highSchoolTab" class="tab-panel">
+                    <div id="highSchoolCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="stc8.jpg" class="d-block w-100" alt="Academic Programs">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Academic Programs</h5>
+                                    <p>Science & Technology, Special Science Classes, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="stc9.jpg" class="d-block w-100" alt="Co-Curricular Activities">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Co-Curricular Activities</h5>
+                                    <p>Science Club, Robotics Club, Sports Teams, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="stc10.jpg" class="d-block w-100" alt="Facilities">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Facilities</h5>
+                                    <p>Digital Library, Innovation Hub, Science Labs, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#highSchoolCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#highSchoolCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- Senior High Carousel -->
+                <div id="seniorHighTab" class="tab-panel">
+                    <div id="seniorHighCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="stc11.jpg" class="d-block w-100" alt="STEM Track">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>STEM Track</h5>
+                                    <p>Pre-Calculus, Physics, Research, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="stc12.jpg" class="d-block w-100" alt="ABM Track">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>ABM Track</h5>
+                                    <p>Business Mathematics, Finance, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="stc13.jpg" class="d-block w-100" alt="Facilities">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Facilities</h5>
+                                    <p>Innovation Hub, Library, Labs, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#seniorHighCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#seniorHighCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- College Carousel -->
+                <div id="collegeTab" class="tab-panel">
+                    <div id="collegeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="stc14.jpg" class="d-block w-100" alt="Programs">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Degree Programs</h5>
+                                    <p>BS Computer Science, Business Admin, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="stc15.jpg" class="d-block w-100" alt="Electives">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Electives</h5>
+                                    <p>AI, Digital Marketing, Creative Writing, and more.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="stc16.jpg" class="d-block w-100" alt="Facilities">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Facilities</h5>
+                                    <p>Research Labs, Collaborative Spaces, and more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#collegeCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#collegeCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="faq py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Admission Requirements
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li>✓ High School Diploma or equivalent</li>
+                                        <li>✓ Minimum GPA of 3.0</li>
+                                        <li>✓ Letters of Recommendation</li>
+                                        <li>✓ Entrance Exam Results</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Scholarship Opportunities
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>DLSU STC offers various scholarship programs:</p>
+                                    <ul>
+                                        <li>Academic Excellence Scholarship</li>
+                                        <li>Research Grant</li>
+                                        <li>Sports Scholarship</li>
+                                        <li>Financial Aid Program</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Campus Facilities
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Our campus features state-of-the-art facilities:</p>
+                                    <ul>
+                                        <li>Modern Research Laboratories</li>
+                                        <li>High-Performance Computing Center</li>
+                                        <li>Innovation Hub</li>
+                                        <li>Student Recreation Center</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="academic-calendar py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-success text-white">
+                            <h3>Academic Calendar</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Start of Classes: August 15, 2023</li>
+                                <li class="list-group-item">Midterm Exams: October 10-15, 2023</li>
+                                <li class="list-group-item">End of Classes: December 10, 2023</li>
+                                <li class="list-group-item">Final Exams: December 15-20, 2023</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="/public/sched.pdf" class="btn btn-success" download>Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Include Footer -->
+<div id="footer-placeholder"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="/js/main.js" type="module"></script>
+    <script src="/js/navigation.js" type="module"></script>
+    <script src="/js/interactive.js" type="module"></script>
+    <script src="/js/forms.js" type="module"></script>
+    <script src="/js/calendar.js" type="module"></script>
+    <script src="/js/academicPrograms.js"></script>
+</body>
+</html>
