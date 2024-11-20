@@ -1,23 +1,10 @@
 // Theme Management
 const themeManager = {
     init() {
-        this.themeToggle = document.getElementById('themeToggle');
         this.fontSizeControls = document.querySelectorAll('.font-size-control');
-        this.languageSwitch = document.getElementById('languageSwitch');
         
-        this.setupThemeToggle();
         this.setupFontSizeControls();
-        this.setupLanguageSwitch();
         this.loadUserPreferences();
-    },
-
-    setupThemeToggle() {
-        if (this.themeToggle) {
-            this.themeToggle.addEventListener('change', () => {
-                document.body.classList.toggle('dark-theme');
-                localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
-            });
-        }
     },
 
     setupFontSizeControls() {
@@ -30,44 +17,13 @@ const themeManager = {
         });
     },
 
-    setupLanguageSwitch() {
-        if (this.languageSwitch) {
-            this.languageSwitch.addEventListener('change', () => {
-                const lang = this.languageSwitch.checked ? 'fil' : 'en';
-                this.changeLanguage(lang);
-                localStorage.setItem('language', lang);
-            });
-        }
-    },
-
     loadUserPreferences() {
-        // Load theme preference
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-theme');
-            this.themeToggle.checked = true;
-        }
-
         // Load font size preference
         const savedFontSize = localStorage.getItem('fontSize');
         if (savedFontSize) {
             document.documentElement.style.fontSize = savedFontSize;
         }
-
-        // Load language preference
-        const savedLanguage = localStorage.getItem('language');
-        if (savedLanguage) {
-            this.changeLanguage(savedLanguage);
-            this.languageSwitch.checked = savedLanguage === 'fil';
-        }
     },
-
-    changeLanguage(lang) {
-        document.querySelectorAll('[data-lang]').forEach(element => {
-            const translations = JSON.parse(element.dataset.lang);
-            element.textContent = translations[lang];
-        });
-    }
 };
 
 // Tab System
